@@ -198,7 +198,7 @@ abstract class Parser {
 			$tokenLine = 0;
 			$tokenColumn = 0;
 		}
-		throw new ParseError( $extra, 0, $tokenLine, $tokenColumn, $tokenName, $tokenSymbol );
+		throw new ParseErrorException( $extra, 0, $tokenLine, $tokenColumn, $tokenName, $tokenSymbol );
 	}
 
 	

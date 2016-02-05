@@ -17,7 +17,7 @@ use Exception;
  * @category PLUG
  * @package parsing
  */
-class ParseError extends Exception {
+class ParseErrorException extends Exception {
 	
 	/**
 	 * Scalara symbol of token

@@ -17,7 +17,7 @@ $source = isset($_POST['source']) ? $_POST['source'] : file_get_contents('simple
 try {
 	$Prog = JParser::parse_string( $source );
 }
-catch( ParseError $Ex ){
+catch( ParseErrorException $Ex ){
 	$error = $Ex->getMessage()."\n----\n".$Ex->snip( $source );
 }
 catch( Exception $Ex ){

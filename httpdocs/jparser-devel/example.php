@@ -23,7 +23,7 @@ try {
 	$Parser = new JParser;
 	$Tree = $Parser->parse( $tokens );
 }
-catch( ParseError $Ex ){
+catch( ParseErrorException $Ex ){
 	$error = $Ex->getMessage()."\n----\n".$Ex->snip($src);
 	die('<pre>'.htmlentities($error,ENT_COMPAT,'UTF-8').'</pre>');
 }
